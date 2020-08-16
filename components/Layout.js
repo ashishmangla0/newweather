@@ -1,7 +1,13 @@
-const Layout = () =>{
+import Header from "./Header"
+import Footer from "./Footer"
+const Layout = ({children}) =>{
     return(
         <>
-            this is from Layout
+        <Header/>
+            <main role="main">
+                {children}
+            </main>
+            <Footer/>
         </>
     )
 }
